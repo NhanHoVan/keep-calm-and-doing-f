@@ -34,6 +34,16 @@ Dự án được thiết kế với tiêu chuẩn bảo mật cao:
 - **Server-side**: Xác thực ID Token từ Google bằng thư viện chính thức, kiểm tra Audience (Client ID), Signature và Expiration.
 - **Session**: Quản lý phiên làm việc thông qua JWT được lưu trữ trong HttpOnly Cookie.
 
+## 🔄 CI/CD
+
+Dự án tích hợp **GitHub Actions** để tự động kiểm tra chất lượng mã nguồn:
+- **Workflow**: `.github/workflows/ci.yml`
+- **Tự động chạy**: Khi có Pull Request open.
+- **Các bước kiểm tra**:
+  - Cài đặt dependencies.
+  - Chạy `npm run lint` (TypeScript check).
+  - Chạy `npm run build` (Vite build).
+
 ## ⚙️ Cấu hình môi trường
 
 Để ứng dụng hoạt động đầy đủ, bạn cần cấu hình các biến môi trường trong file `.env`:
