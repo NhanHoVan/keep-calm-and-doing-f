@@ -2,6 +2,8 @@
 
 KeepCalmAndDoing là một ứng dụng quản lý và lập kế hoạch dự án thông minh được hỗ trợ bởi AI (Gemini API). Ứng dụng giúp người dùng chuyển đổi ý tưởng dự án thành một danh sách công việc chi tiết với mốc thời gian cụ thể, giúp bạn quản lý công việc một cách bình tĩnh và hiệu quả.
 
+<img width="1229" height="783" alt="image" src="https://github.com/user-attachments/assets/c837aded-ed73-4e37-bb97-525296988d72" />
+
 ## 🚀 Chức năng chính
 
 - **Lập kế hoạch bằng AI**: Sử dụng sức mạnh của Gemini AI để tự động phân tích ý tưởng dự án và tạo ra danh sách công việc (WBS - Work Breakdown Structure) chi tiết.
