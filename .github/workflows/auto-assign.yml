@@ -26,6 +26,12 @@ jobs:
           PR_NUMBER=${{ github.event.pull_request.number }}
           AUTHOR=${{ github.event.pull_request.user.login }}
 
+          # Skip bot accounts
+          if [[ "$AUTHOR" == *"[bot]"* ]]; then
+            echo "Skipping bot PR from $AUTHOR"
+            exit 0
+          fi
+
           echo "Checking assignees of PR #$PR_NUMBER"
 
           CURRENT_ASSIGNEES=$(gh pr view "$PR_NUMBER" --json assignees --jq '.assignees[].login')
